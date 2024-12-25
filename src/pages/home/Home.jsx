@@ -38,7 +38,7 @@ const Home = (props) => {
                                 </div>
                             </div>
                             <div className='pizza-card-footer'>
-                                <h4>{pizza.price}</h4>
+                                <h4 style={{fontSize:'22px',fontWeight:'',fontFamily:'sans-serif'}}>от {pizza.price}</h4>
                                 <button onClick={() => {
                                     addToCart(pizza)
                                 }} style={{ display: 'flex' }}>

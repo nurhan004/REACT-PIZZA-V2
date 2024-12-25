@@ -11,12 +11,13 @@ header {
         display: flex;
     }
     .search{
-        width: 300px;
+        width: 400px;
         border: 1px solid black;
         border-radius: 6px;
         margin-left: 130px;
         display: flex;
         align-items: center;
+        padding: 2px;
     
     }
     .search input {
@@ -27,6 +28,7 @@ header {
     }
     .cart-btn {
         margin-left: auto;
+       
         
      
       

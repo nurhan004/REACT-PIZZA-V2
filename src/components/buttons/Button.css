@@ -1,9 +1,11 @@
 .vse{
-    width: 70px;
-    height: 35px;
-    color: black;
+  
+   padding: 15px;
+
+   color: black;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+   
     
   
     border-radius: 20px;
@@ -18,97 +20,7 @@
     color: white;
     outline: none; 
   }
-.meat{
-    width: 100px;
-    height: 35px;
-    border-radius: 20px;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-.meat:hover{
-    background-color:rgb(216, 215, 215) ;
-}
-.meat:active,
-  .meat:focus {
-    background-color: black;
-    color: white;
-    outline: none; 
-  }
-.vega{
-    width: 150px;
-    height: 35px;
-    border-radius: 20px;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-
-}
-.vega:hover{
-    background-color:rgb(216, 215, 215) ;
-}
-.vega:active,
-  .vega:focus {
-    background-color: black;
-    color: white;
-    outline: none; 
-  }
-.gril {
-    width: 80px;
-    height: 35px;
-    border-radius: 20px;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-
-  .gril:hover {
-    background-color: rgb(216, 215, 215);
-  }
-
- 
-  .gril:active,
-  .gril:focus {
-    background-color: black;
-    color: white;
-    outline: none; 
-  }
-
-
-.spai{
-    width: 90px;
-    height: 35px;
-    border-radius: 20px;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-.spai:hover{
-    background-color: rgb(216, 215, 215);
-}
-.spai:active,
-.spai:focus {
-  background-color: black;
-  color: white;
-  outline: none; 
-}
-.sak{
-    width: 110px;
-    height: 35px;
-    border-radius: 20px;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-.sak:hover{
-    background-color:rgb(216, 215, 215) ;
-}
-.sak:active,
-.sak:focus {
-  background-color: black;
-  color: white;
-  outline: none; 
-}
+  
 .dropdown {
   
   display: flex;

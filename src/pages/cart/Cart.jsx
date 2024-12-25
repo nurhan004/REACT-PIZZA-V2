@@ -1,10 +1,12 @@
 import "./Card.css";
 import { BsCart2 } from "react-icons/bs";
 import { HiOutlineTrash } from "react-icons/hi2";
-import { LuCircleMinus } from "react-icons/lu";
-import { RiAddCircleLine } from "react-icons/ri";
 import { TiDeleteOutline } from "react-icons/ti";
 import { IoIosArrowBack } from "react-icons/io";
+import { CiCircleMinus } from "react-icons/ci";
+import { GoXCircle } from "react-icons/go";
+import { CiCirclePlus } from "react-icons/ci";
+
 import { useContext } from "react";
 import { APPCONTEXT } from "../../context/AppContext";
 import { Link } from "react-router";
@@ -37,12 +39,13 @@ const Cart = () => {
           <div style={{display:'flex', paddingTop:'30px',marginLeft:'100px',gap:'20px'}}>
             <img src="https://my-react-pizza-v2.netlify.app/static/media/pizza-logo.56ac87032d8f6fdf863326acd06c0d97.svg" alt="" style={{width:'40px'}} />
         <div>
-          <Link to="/">
+          <Link to="/" >
             <h4 className="v2" >Okurmen Pizza v2</h4>
             <p className="very" >самая вкусная пицца во вселенной</p>
           </Link>
         </div>
         </div>
+        <div style={{width:'1200px', height:'1px',backgroundColor:'grey',marginTop:'30px'}}></div>
       <div className="cart">
         <h1 className="cartt">
           <span><BsCart2 /></span>Корзина</h1>
@@ -70,16 +73,15 @@ const Cart = () => {
               </div>
               <div style={{ display: "flex", gap: "10px" }}>
                 <span className="minuse">
-                  <LuCircleMinus />
+                <CiCircleMinus />
                 </span>
-                <h1>1</h1>
+                <h1 className="quantity1">1</h1>
                 <h1>{item.quantity}</h1>
                 <span className="add">
-                  <RiAddCircleLine />
+                <CiCirclePlus />
                 </span>
                 <h1 style={{ marginLeft: "50px" }}>{item.price} </h1>
-                <span className="back" >
-                  <TiDeleteOutline />
+                <span className="back" ><GoXCircle />
                 </span>
               </div>
             </div>

@@ -2,6 +2,27 @@ import React, { useState } from "react";
 import "./Button.css";
 import { IoCaretUpOutline } from "react-icons/io5";
 
+const btnApi = [
+  {
+    name:'Все'
+  },
+  {
+    name:'Мясное'
+  },
+  {
+    name:'Вегетарианская'
+  },
+  {
+    name:'Гриль'
+  },
+  {
+    name:'Острые'
+  },
+  {
+    name:'Закрытые'
+  },
+]
+
 const Button = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [selectedSort, setSelectedSort] = useState("популярности (desc)");
@@ -15,13 +36,24 @@ const Button = () => {
     setDropdownOpen(false);
   };
   return (
-    <div className="" style={{ display: 'flex', gap: '20px', marginTop: '50px' }}>
-      <button className="vse bg-slate-100">Все</button>
-      <button className="meat bg-slate-100">Мясное</button>
-      <button className="vega bg-slate-100">Вегетарианская</button>
-      <button className="gril bg-slate-100">Гриль</button>
-      <button className="spai bg-slate-100">Острые</button>
-      <button className="sak bg-slate-100">Закрытые</button>
+    <div  style={{ display: 'flex',marginLeft:'70px', gap: '20px', marginTop: '50px' }}>
+      {btnApi.map(btn=> {
+        return(
+          <div key={btn.name}>
+            <div className="btndiv">
+            <button className="vse">{btn.name}</button>
+
+
+            </div>
+          
+
+          </div>
+
+        )
+        
+        
+      })}
+      
 
       <div className="dropdown w-[900px]">
       <p className="sort" onClick={toggleDropdown}>
