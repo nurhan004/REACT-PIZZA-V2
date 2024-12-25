@@ -21,6 +21,12 @@ const Cart = () => {
   };
 
 
+  const total = cartData.reduce((a,b) => {
+      return a + parseInt(b.price)
+  },0)
+  
+
+
   const clearCart = () => {
     setCartData([]);
     localStorage.removeItem("cart");
@@ -28,11 +34,13 @@ const Cart = () => {
 
   return (
       <div className="cartcard"> 
-          <div style={{display:'flex', paddingTop:'30px',marginLeft:'100px'}}>
+          <div style={{display:'flex', paddingTop:'30px',marginLeft:'100px',gap:'20px'}}>
             <img src="https://my-react-pizza-v2.netlify.app/static/media/pizza-logo.56ac87032d8f6fdf863326acd06c0d97.svg" alt="" style={{width:'40px'}} />
         <div>
-            <h4 style={{fontSize:'30px',fontWeight:'700'}} >Okurmen Pizza</h4>
-            <p >самая вкусная пицца во вселенной</p>
+          <Link to="/">
+            <h4 className="v2" >Okurmen Pizza v2</h4>
+            <p className="very" >самая вкусная пицца во вселенной</p>
+          </Link>
         </div>
         </div>
       <div className="cart">
@@ -45,7 +53,7 @@ const Cart = () => {
    
 
       {cartData.length === 0 ? (
-        <div style={{textAlign:'center'}}>
+        <div className="flex">
             <h1 className="pust">Корзина пустая 😕</h1>
             <h2 className="yet">Вероятней всего, вы не заказывали ещё пиццу.
 Для того, чтобы заказать пиццу, перейди на главную страницу.</h2>
@@ -64,12 +72,13 @@ const Cart = () => {
                 <span className="minuse">
                   <LuCircleMinus />
                 </span>
+                <h1>1</h1>
                 <h1>{item.quantity}</h1>
                 <span className="add">
                   <RiAddCircleLine />
                 </span>
                 <h1 style={{ marginLeft: "50px" }}>{item.price} </h1>
-                <span className="back" onClick={() => removeItem(item.id)}>
+                <span className="back" >
                   <TiDeleteOutline />
                 </span>
               </div>
@@ -85,17 +94,9 @@ const Cart = () => {
             }}
           >
             <h2 className="nur">
-              Всего пицц:{" "}
-              <span className="cht">
-                {cartData.reduce((total, item) => total + item.quantity, 0)} шт.
-              </span>
+              Всего пицц: <span className="quantities">{cartData.length > 0 ?cartData.length:null  }шт.</span>
             </h2>
-            <h2 className="sell">
-              Сумма заказа:{""}
-              <span style={{ color: "rgb(255, 132, 0)", fontWeight: "600" }}>
-                {cartData.reduce((total, item) => total + item.price * item.quantity, 0)} ₽
-              </span>
-            </h2>
+            <h2 className="sell">Сумма заказа: <span className="dani">{total}сом</span></h2>
           </div>
         </>
       )}
@@ -109,12 +110,10 @@ const Cart = () => {
         }}
       >
         <Link to="/">
-          <button className="back1">
-            <span className="arrow">
-              <IoIosArrowBack />
-            </span>
-            Вернуться назад
-          </button>
+        <div>
+
+        </div>
+          <button className="back1"><span className="arrow"><IoIosArrowBack /></span>Вернуться назад</button>
         </Link>
         {cartData.length > 0 && <button className="buy">Оплатить сейчас</button>}
       </div>
