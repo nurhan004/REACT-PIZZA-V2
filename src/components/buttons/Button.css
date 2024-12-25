@@ -1,0 +1,165 @@
+.vse{
+    width: 70px;
+    height: 35px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    
+  
+    border-radius: 20px;
+}
+.vse:hover{
+    background-color: rgb(216, 215, 215);
+  
+}
+.vse:active,
+  .vse:focus {
+    background-color: black;
+    color: white;
+    outline: none; 
+  }
+.meat{
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.meat:hover{
+    background-color:rgb(216, 215, 215) ;
+}
+.meat:active,
+  .meat:focus {
+    background-color: black;
+    color: white;
+    outline: none; 
+  }
+.vega{
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+.vega:hover{
+    background-color:rgb(216, 215, 215) ;
+}
+.vega:active,
+  .vega:focus {
+    background-color: black;
+    color: white;
+    outline: none; 
+  }
+.gril {
+    width: 80px;
+    height: 35px;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .gril:hover {
+    background-color: rgb(216, 215, 215);
+  }
+
+ 
+  .gril:active,
+  .gril:focus {
+    background-color: black;
+    color: white;
+    outline: none; 
+  }
+
+
+.spai{
+    width: 90px;
+    height: 35px;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.spai:hover{
+    background-color: rgb(216, 215, 215);
+}
+.spai:active,
+.spai:focus {
+  background-color: black;
+  color: white;
+  outline: none; 
+}
+.sak{
+    width: 110px;
+    height: 35px;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.sak:hover{
+    background-color:rgb(216, 215, 215) ;
+}
+.sak:active,
+.sak:focus {
+  background-color: black;
+  color: white;
+  outline: none; 
+}
+.dropdown {
+  
+  display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 150px;
+  }
+  
+  
+  .sort {
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    
+   
+  }
+  
+  .selected-sort {
+    color: orange;
+  }
+  
+  .selected-sort:hover {
+    text-decoration: underline;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .dropdown-content p {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .dropdown-content p:hover {
+    background-color: #fcefd6;
+  }
+  
+
+
+
+  

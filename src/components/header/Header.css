@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    align-items: center;
+    /* width: 1200px;
+    margin: 0 auto; */
+    padding: 30px 0;
+    background-color: #fff;
+    border-bottom: 1px solid grey;
+    }
+    .logo{
+        display: flex;
+    }
+    .search{
+        width: 300px;
+        border: 1px solid black;
+        border-radius: 6px;
+        margin-left: 130px;
+        display: flex;
+        align-items: center;
+    
+    }
+    .search input {
+        padding: 10px 0 10px 10px;
+        background-color: transparent;
+        width: 100%;
+        outline: none;
+    }
+    .cart-btn {
+        margin-left: auto;
+        
+     
+      
+    }
+    .cart-btn a {
+        padding: 14px 30px;
+        border-radius: 25px;
+        background-color: #f25d24;
+        color: white;
+    }
