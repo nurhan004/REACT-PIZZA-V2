@@ -9,6 +9,7 @@ header {
     }
     .logo{
         display: flex;
+        margin-left: 60px;
     }
     .search{
         width: 400px;

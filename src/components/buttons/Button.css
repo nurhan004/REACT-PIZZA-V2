@@ -1,6 +1,7 @@
 .vse{
   
-   padding: 15px;
+   padding: 17px;
+   
 
    color: black;
     cursor: pointer;
@@ -23,13 +24,20 @@
   
 .dropdown {
   
-  display: flex;
-    flex-direction: column;
+  
+
     font-weight: 300;
     font-size: 14px;
     margin-top: 10px;
     position: relative;
-    margin-left: 150px;
+
+    margin-left: 100px;
+  }
+  .span{
+    position: relative;
+   top: 4px;
+   right:8px;
+
   }
   
   

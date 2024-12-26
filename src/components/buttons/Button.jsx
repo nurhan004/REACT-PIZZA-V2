@@ -55,7 +55,7 @@ const Button = () => {
       })}
       
 
-      <div className="dropdown w-[900px]">
+      <div className="dropdown ">
       <p className="sort" onClick={toggleDropdown}>
         <span className="span" ><IoCaretUpOutline /></span>Сортировка по: <span className="selected-sort">{selectedSort}</span>
       </p>

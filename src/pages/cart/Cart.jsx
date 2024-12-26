@@ -45,7 +45,7 @@ const Cart = () => {
           </Link>
         </div>
         </div>
-        <div style={{width:'1200px', height:'1px',backgroundColor:'grey',marginTop:'30px'}}></div>
+        <div style={{width:'1200px', height:'1px',backgroundColor:'rgb(231, 230, 230)',position:"relative",top:'30px'}}></div>
       <div className="cart">
         <h1 className="cartt">
           <span><BsCart2 /></span>Корзина</h1>
