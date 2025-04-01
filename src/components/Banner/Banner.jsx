@@ -37,6 +37,8 @@ function Banner() {
         hjfkwe
         hjfkwe
       </p>
+
+      <h1>nurzada</h1>
     </div>
   )
 }
